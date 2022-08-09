@@ -1,0 +1,182 @@
+Aug 09 18:08:10.284 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Aug 09 18:08:10.286 HYPERVISOR: Started on IP = localhost, TCP port = 65026.
+Aug 09 18:08:10.728 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 09 18:08:10.729 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\05ryo\GNS3\projects\docker-nginx\project-files\dynamips 
+Aug 09 18:08:10.739 GENERAL: working_dir=C:\Users\05ryo\GNS3\projects\docker-nginx\project-files\dynamips
+Aug 09 18:08:10.740 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\05ryo\GNS3\projects\docker-nginx\project-files\dynamips\d5868485-7b06-43a6-adfb-31b036e78729 
+Aug 09 18:08:10.741 GENERAL: working_dir=C:\Users\05ryo\GNS3\projects\docker-nginx\project-files\dynamips\d5868485-7b06-43a6-adfb-31b036e78729
+Aug 09 18:08:10.741 HYPERVISOR: exec_cmd: vm create R1 1 c3725 
+Aug 09 18:08:10.746 VM: VM R1 created.
+Aug 09 18:08:10.748 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Aug 09 18:08:10.748 HYPERVISOR: exec_cmd: c3725 get_mac_addr R1 
+Aug 09 18:08:10.749 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Aug 09 18:08:10.750 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Aug 09 18:08:10.751 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 09 18:08:10.751 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60c086a8 
+Aug 09 18:08:10.753 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/05ryo/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Aug 09 18:08:10.754 HYPERVISOR: exec_cmd: c3725 set_mac_addr R1 c201.30c0.0000 
+Aug 09 18:08:10.755 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Aug 09 18:08:10.756 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Aug 09 18:09:00.202 HYPERVISOR: exec_cmd: nio create_udp udp-0adecb99-5ca8-4744-9d47-e7a685312cbe 10001 127.0.0.1 10002 
+Aug 09 18:09:00.683 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-0adecb99-5ca8-4744-9d47-e7a685312cbe 
+Aug 09 18:09:00.685 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 09 18:09:00.756 HYPERVISOR: exec_cmd: nio create_udp udp-7d0af6ca-9b2e-414e-ade5-86767ce18da6 10004 127.0.0.1 10005 
+Aug 09 18:09:00.759 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-7d0af6ca-9b2e-414e-ade5-86767ce18da6 
+Aug 09 18:09:00.760 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 09 18:16:53.114 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Aug 09 18:16:53.118 VM: VM Ghost created.
+Aug 09 18:16:53.122 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/05ryo/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Aug 09 18:16:53.123 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Aug 09 18:16:53.124 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\05ryo\GNS3\projects\docker-nginx\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-256.ghost 
+Aug 09 18:16:53.124 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Aug 09 18:16:53.125 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Aug 09 18:16:53.148 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Aug 09 18:16:53.149 HYPERVISOR: exec_cmd: vm start Ghost 
+Aug 09 18:16:54.068 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Aug 09 18:16:54.069 HYPERVISOR: exec_cmd: vm stop Ghost 
+Aug 09 18:16:54.215 VM: VM Ghost shutdown.
+Aug 09 18:16:54.217 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Aug 09 18:16:54.221 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Aug 09 18:16:54.221 VM: VM Ghost destroyed.
+Aug 09 18:16:54.242 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Aug 09 18:16:54.243 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\05ryo\GNS3\projects\docker-nginx\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-256.ghost 
+Aug 09 18:16:54.243 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 09 18:16:54.244 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Aug 09 18:16:54.244 HYPERVISOR: exec_cmd: vm start R1 
+Aug 09 18:17:24.631 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 09 18:17:24.646 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 09 19:36:58.910 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 09 19:36:58.912 HYPERVISOR: exec_cmd: vm slot_disable_nio R1 0 0 
+Aug 09 19:36:58.923 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 0 
+Aug 09 19:36:58.931 HYPERVISOR: exec_cmd: nio delete udp-0adecb99-5ca8-4744-9d47-e7a685312cbe 
+Aug 09 19:37:30.905 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 09 19:37:30.905 HYPERVISOR: exec_cmd: vm stop R1 
+Aug 09 19:37:31.013 VM: VM R1 shutdown.
+Aug 09 19:37:31.015 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 09 19:37:34.785 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 09 19:37:34.786 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 1 
+Aug 09 19:37:34.787 HYPERVISOR: exec_cmd: nio delete udp-7d0af6ca-9b2e-414e-ade5-86767ce18da6 
+Aug 09 19:37:39.762 HYPERVISOR: exec_cmd: nio create_udp udp-46caf721-9f1f-4c4e-b476-3bd34a7bf690 10001 127.0.0.1 10002 
+Aug 09 19:37:39.771 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-46caf721-9f1f-4c4e-b476-3bd34a7bf690 
+Aug 09 19:37:39.772 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 09 19:37:44.243 HYPERVISOR: exec_cmd: nio create_udp udp-de4eef55-d9d2-4545-a5ca-52d9fca21151 10004 127.0.0.1 10005 
+Aug 09 19:37:44.247 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-de4eef55-d9d2-4545-a5ca-52d9fca21151 
+Aug 09 19:37:44.247 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 09 19:37:49.241 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Aug 09 19:37:49.242 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\05ryo\GNS3\projects\docker-nginx\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-256.ghost 
+Aug 09 19:37:49.243 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 09 19:37:49.246 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Aug 09 19:37:49.246 HYPERVISOR: exec_cmd: vm start R1 
+Aug 09 19:38:19.991 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 09 19:38:20.011 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 09 19:46:44.600 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 09 19:46:44.600 HYPERVISOR: exec_cmd: vm stop R1 
+Aug 09 19:46:44.783 VM: VM R1 shutdown.
+Aug 09 19:46:44.784 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 09 19:46:50.378 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Aug 09 19:46:50.379 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\05ryo\GNS3\projects\docker-nginx\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-256.ghost 
+Aug 09 19:46:50.380 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 09 19:46:50.381 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Aug 09 19:46:50.381 HYPERVISOR: exec_cmd: vm start R1 
+Aug 09 19:47:20.753 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 09 19:47:20.764 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 09 19:49:20.771 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 09 19:49:20.783 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 09 19:49:45.613 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 09 19:49:45.614 HYPERVISOR: exec_cmd: vm stop R1 
+Aug 09 19:49:45.810 VM: VM R1 shutdown.
+Aug 09 19:49:45.812 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 09 19:49:47.491 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Aug 09 19:49:47.492 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\05ryo\GNS3\projects\docker-nginx\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-256.ghost 
+Aug 09 19:49:47.494 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 09 19:49:47.496 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Aug 09 19:49:47.496 HYPERVISOR: exec_cmd: vm start R1 
+Aug 09 19:50:17.892 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 09 19:50:17.912 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 09 19:53:47.888 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 09 19:53:47.899 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 09 19:55:17.542 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 09 19:55:17.543 HYPERVISOR: exec_cmd: vm stop R1 
+Aug 09 19:55:17.676 VM: VM R1 shutdown.
+Aug 09 19:55:17.679 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 09 19:55:19.740 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Aug 09 19:55:19.742 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\05ryo\GNS3\projects\docker-nginx\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-256.ghost 
+Aug 09 19:55:19.742 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 09 19:55:19.744 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Aug 09 19:55:19.744 HYPERVISOR: exec_cmd: vm start R1 
+Aug 09 19:55:50.115 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 09 19:55:50.127 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 09 20:03:40.361 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 09 20:03:40.361 HYPERVISOR: exec_cmd: vm stop R1 
+Aug 09 20:03:40.588 VM: VM R1 shutdown.
+Aug 09 20:03:40.589 HYPERVISOR: exec_cmd: vm extract_config R1 
+Aug 09 20:04:00.442 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 09 20:04:00.442 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R1 0 1 
+Aug 09 20:04:00.444 HYPERVISOR: exec_cmd: nio delete udp-de4eef55-d9d2-4545-a5ca-52d9fca21151 
+Aug 09 20:05:49.065 HYPERVISOR: exec_cmd: nio create_udp udp-08c172fa-7701-4708-91d4-dd7788af4902 10004 127.0.0.1 10005 
+Aug 09 20:05:49.070 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-08c172fa-7701-4708-91d4-dd7788af4902 
+Aug 09 20:05:49.070 HYPERVISOR: exec_cmd: vm get_status R1 
+Aug 09 20:07:44.659 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/05ryo/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Aug 09 20:07:44.660 HYPERVISOR: exec_cmd: vm rename R1 router 
+Aug 09 20:07:44.754 HYPERVISOR: exec_cmd: vm set_ios router C:/Users/05ryo/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Aug 09 20:08:30.598 HYPERVISOR: exec_cmd: vm set_ghost_status router 2 
+Aug 09 20:08:30.599 HYPERVISOR: exec_cmd: vm set_ghost_file router C:\Users\05ryo\GNS3\projects\docker-nginx\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-256.ghost 
+Aug 09 20:08:30.600 HYPERVISOR: exec_cmd: vm get_status router 
+Aug 09 20:08:30.601 HYPERVISOR: exec_cmd: vm set_config router configs\i1_startup-config.cfg 
+Aug 09 20:08:30.602 HYPERVISOR: exec_cmd: vm start router 
+Aug 09 20:09:00.981 HYPERVISOR: exec_cmd: vm extract_config router 
+Aug 09 20:09:00.994 HYPERVISOR: exec_cmd: vm extract_config router 
+Aug 09 20:09:13.880 HYPERVISOR: exec_cmd: vm get_status router 
+Aug 09 20:09:13.882 HYPERVISOR: exec_cmd: vm stop router 
+Aug 09 20:09:14.079 VM: VM router shutdown.
+Aug 09 20:09:14.080 HYPERVISOR: exec_cmd: vm extract_config router 
+Aug 09 20:09:22.341 HYPERVISOR: exec_cmd: vm get_status router 
+Aug 09 20:09:22.341 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding router 0 1 
+Aug 09 20:09:22.344 HYPERVISOR: exec_cmd: nio delete udp-08c172fa-7701-4708-91d4-dd7788af4902 
+Aug 09 20:12:20.715 HYPERVISOR: exec_cmd: vm get_status router 
+Aug 09 20:12:20.716 HYPERVISOR: exec_cmd: vm extract_config router 
+Aug 09 20:15:07.899 HYPERVISOR: exec_cmd: nio create_udp udp-a7687cc6-d0e6-498b-8bcc-a6ce47e963c8 10004 127.0.0.1 10005 
+Aug 09 20:15:07.911 HYPERVISOR: exec_cmd: vm slot_add_nio_binding router 0 1 udp-a7687cc6-d0e6-498b-8bcc-a6ce47e963c8 
+Aug 09 20:15:07.912 HYPERVISOR: exec_cmd: vm get_status router 
+Aug 09 20:16:20.323 HYPERVISOR: exec_cmd: vm set_ghost_status router 2 
+Aug 09 20:16:20.329 HYPERVISOR: exec_cmd: vm set_ghost_file router C:\Users\05ryo\GNS3\projects\docker-nginx\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-256.ghost 
+Aug 09 20:16:20.333 HYPERVISOR: exec_cmd: vm get_status router 
+Aug 09 20:16:20.337 HYPERVISOR: exec_cmd: vm set_config router configs\i1_startup-config.cfg 
+Aug 09 20:16:20.345 HYPERVISOR: exec_cmd: vm start router 
+Aug 09 20:16:50.807 HYPERVISOR: exec_cmd: vm extract_config router 
+Aug 09 20:16:50.840 HYPERVISOR: exec_cmd: vm extract_config router 
+Aug 09 21:03:51.337 HYPERVISOR: exec_cmd: vm get_status router 
+Aug 09 21:03:51.338 HYPERVISOR: exec_cmd: vm stop router 
+Aug 09 21:03:51.558 VM: VM router shutdown.
+Aug 09 21:03:51.559 HYPERVISOR: exec_cmd: vm extract_config router 
+Aug 09 21:04:11.806 HYPERVISOR: exec_cmd: vm get_status router 
+Aug 09 21:04:11.806 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding router 0 0 
+Aug 09 21:04:11.812 HYPERVISOR: exec_cmd: nio delete udp-46caf721-9f1f-4c4e-b476-3bd34a7bf690 
+Aug 09 21:06:10.436 HYPERVISOR: exec_cmd: nio create_udp udp-89051104-fee4-4710-a947-07d7a088324f 10001 127.0.0.1 10002 
+Aug 09 21:06:10.441 HYPERVISOR: exec_cmd: vm slot_add_nio_binding router 0 0 udp-89051104-fee4-4710-a947-07d7a088324f 
+Aug 09 21:06:10.442 HYPERVISOR: exec_cmd: vm get_status router 
+Aug 09 21:07:03.891 HYPERVISOR: exec_cmd: vm set_ghost_status router 2 
+Aug 09 21:07:03.896 HYPERVISOR: exec_cmd: vm set_ghost_file router C:\Users\05ryo\GNS3\projects\docker-nginx\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-256.ghost 
+Aug 09 21:07:03.899 HYPERVISOR: exec_cmd: vm get_status router 
+Aug 09 21:07:03.903 HYPERVISOR: exec_cmd: vm set_config router configs\i1_startup-config.cfg 
+Aug 09 21:07:03.907 HYPERVISOR: exec_cmd: vm start router 
+Aug 09 21:07:34.527 HYPERVISOR: exec_cmd: vm extract_config router 
+Aug 09 21:07:34.543 HYPERVISOR: exec_cmd: vm extract_config router 
+Aug 09 21:09:04.529 HYPERVISOR: exec_cmd: vm get_status router 
+Aug 09 21:09:04.533 HYPERVISOR: exec_cmd: vm stop router 
+Aug 09 21:09:04.862 VM: VM router shutdown.
+Aug 09 21:09:04.869 HYPERVISOR: exec_cmd: vm extract_config router 
+Aug 09 21:09:07.017 HYPERVISOR: exec_cmd: vm set_ghost_status router 2 
+Aug 09 21:09:07.020 HYPERVISOR: exec_cmd: vm set_ghost_file router C:\Users\05ryo\GNS3\projects\docker-nginx\project-files\dynamips\c3725-adventerprisek9-mz.124-15.T14.image-256.ghost 
+Aug 09 21:09:07.024 HYPERVISOR: exec_cmd: vm get_status router 
+Aug 09 21:09:07.037 HYPERVISOR: exec_cmd: vm set_config router configs\i1_startup-config.cfg 
+Aug 09 21:09:07.039 HYPERVISOR: exec_cmd: vm start router 
+Aug 09 21:09:37.499 HYPERVISOR: exec_cmd: vm extract_config router 
+Aug 09 21:09:37.521 HYPERVISOR: exec_cmd: vm extract_config router 
+Aug 09 21:12:59.184 HYPERVISOR: exec_cmd: vm set_ios router C:/Users/05ryo/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Aug 09 21:12:59.410 HYPERVISOR: exec_cmd: vm set_ios router C:/Users/05ryo/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Aug 09 21:12:59.575 HYPERVISOR: exec_cmd: vm set_ios router C:/Users/05ryo/GNS3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Aug 09 21:21:09.197 HYPERVISOR: exec_cmd: vm get_status router 
+Aug 09 21:21:09.198 HYPERVISOR: exec_cmd: vm stop router 
+Aug 09 21:21:09.416 VM: VM router shutdown.
+Aug 09 21:21:09.423 HYPERVISOR: exec_cmd: vm extract_config router 
