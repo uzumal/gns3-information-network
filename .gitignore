@@ -2,3 +2,5 @@
 *.pcap
 *.log
 *.txt
+
+dynamips/
