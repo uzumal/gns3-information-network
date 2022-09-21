@@ -1,2 +1,6 @@
 *.exe
 *.pcap
+*.log
+*.txt
+
+dynamips/
