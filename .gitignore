@@ -3,4 +3,13 @@
 *.log
 *.txt
 
-dynamips/
+*_ram
+*_lock
+
+# hoge/ サブディレクトリのhogeディレクトリを除外する 
+# /hoge/ カレントディレクトリにあるhogeディレクトリを除外する
+
+#!**/dynamips/*/configs/
+#!**/dynamips/*/*_nvram
+#!**/dynamips/*/*_bootflash
+
