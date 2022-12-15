@@ -13,3 +13,4 @@
 #!**/dynamips/*/*_nvram
 #!**/dynamips/*/*_bootflash
 
+.vscode/
