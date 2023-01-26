@@ -4,8 +4,8 @@
     "auto_start": false,
     "drawing_grid_size": 25,
     "grid_size": 75,
-    "name": "9-2-http-ipv6",
-    "project_id": "c5defe95-35ac-4577-94d5-8c8125e07b94",
+    "name": "for-slide-9-2-http",
+    "project_id": "24d9ecca-dc4c-4dc0-a180-805aba0ad819",
     "revision": 9,
     "scene_height": 1000,
     "scene_width": 2000,
@@ -20,7 +20,7 @@
         "links": [
             {
                 "filters": {},
-                "link_id": "16534802-6c2a-494e-a2b2-7c45f961c337",
+                "link_id": "961637c3-932a-4f01-8137-40c8135b429c",
                 "link_style": {},
                 "nodes": [
                     {
@@ -28,11 +28,11 @@
                         "label": {
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "eth0\n2001:1:1:1::1/64",
+                            "text": "eth0\nfd00:0:0:1::1/64",
                             "x": 32,
                             "y": 57
                         },
-                        "node_id": "abde0120-b053-44da-9db2-30e15b6c7f25",
+                        "node_id": "9bc64112-9126-4583-8d7f-a0a2a2177c87",
                         "port_number": 0
                     },
                     {
@@ -40,11 +40,11 @@
                         "label": {
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
-                            "text": "eth0\n2001:1:1:1::100/64",
+                            "text": "eth0\nfd00:0:0:1::100/64",
                             "x": -62,
                             "y": 59
                         },
-                        "node_id": "787c853b-b8a9-4e0a-b991-c680266e15da",
+                        "node_id": "fa338126-e539-4467-8b17-e34d29f1f7ec",
                         "port_number": 0
                     }
                 ],
@@ -69,7 +69,7 @@
                 },
                 "locked": false,
                 "name": "client",
-                "node_id": "abde0120-b053-44da-9db2-30e15b6c7f25",
+                "node_id": "9bc64112-9126-4583-8d7f-a0a2a2177c87",
                 "node_type": "docker",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
@@ -79,7 +79,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "860011d8bf945c8c3f0d0eae8327467dd33e2de529ba2618f433f251c220aeb4",
+                    "container_id": "83c87ea29c88523a5fb9181fd79ed2f895b5abcfbb81dd3abdf00880810ff02c",
                     "environment": null,
                     "extra_hosts": null,
                     "extra_volumes": [],
@@ -111,7 +111,7 @@
                 },
                 "locked": false,
                 "name": "server",
-                "node_id": "787c853b-b8a9-4e0a-b991-c680266e15da",
+                "node_id": "fa338126-e539-4467-8b17-e34d29f1f7ec",
                 "node_type": "docker",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
@@ -121,7 +121,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "6b78493638375ec689780967f43c3fb6dedb627ecc2b7d855d924d9dd79e9730",
+                    "container_id": "3a01c34b5aee4375944287e5f7ffa0f0b6ec316812d1fcbbb3e11caec932dca0",
                     "environment": null,
                     "extra_hosts": null,
                     "extra_volumes": [],
