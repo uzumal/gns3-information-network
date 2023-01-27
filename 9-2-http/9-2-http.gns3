@@ -1,0 +1,145 @@
+{
+    "auto_close": true,
+    "auto_open": false,
+    "auto_start": false,
+    "drawing_grid_size": 25,
+    "grid_size": 75,
+    "name": "for-slide-9-2-http",
+    "project_id": "24d9ecca-dc4c-4dc0-a180-805aba0ad819",
+    "revision": 9,
+    "scene_height": 1000,
+    "scene_width": 2000,
+    "show_grid": false,
+    "show_interface_labels": true,
+    "show_layers": false,
+    "snap_to_grid": false,
+    "supplier": null,
+    "topology": {
+        "computes": [],
+        "drawings": [],
+        "links": [
+            {
+                "filters": {},
+                "link_id": "961637c3-932a-4f01-8137-40c8135b429c",
+                "link_style": {},
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "eth0\nfd00:0:0:1::1/64",
+                            "x": 32,
+                            "y": 57
+                        },
+                        "node_id": "9bc64112-9126-4583-8d7f-a0a2a2177c87",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "eth0\nfd00:0:0:1::100/64",
+                            "x": -62,
+                            "y": 59
+                        },
+                        "node_id": "fa338126-e539-4467-8b17-e34d29f1f7ec",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
+            }
+        ],
+        "nodes": [
+            {
+                "compute_id": "vm",
+                "console": 5901,
+                "console_auto_start": false,
+                "console_type": "vnc",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 59,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "client",
+                    "x": 9,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "client",
+                "node_id": "9bc64112-9126-4583-8d7f-a0a2a2177c87",
+                "node_type": "docker",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "adapters": 1,
+                    "aux": 5003,
+                    "console_http_path": "/",
+                    "console_http_port": 80,
+                    "console_resolution": "1024x768",
+                    "container_id": "83c87ea29c88523a5fb9181fd79ed2f895b5abcfbb81dd3abdf00880810ff02c",
+                    "environment": null,
+                    "extra_hosts": null,
+                    "extra_volumes": [],
+                    "image": "uzumal/gns3-firefox:latest",
+                    "start_command": null,
+                    "usage": ""
+                },
+                "symbol": ":/symbols/docker_guest.svg",
+                "template_id": "c3883901-c436-4759-8799-cce49803852c",
+                "width": 65,
+                "x": -238,
+                "y": -101,
+                "z": 1
+            },
+            {
+                "compute_id": "vm",
+                "console": 5004,
+                "console_auto_start": false,
+                "console_type": "telnet",
+                "custom_adapters": [],
+                "first_port_name": null,
+                "height": 59,
+                "label": {
+                    "rotation": 0,
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "text": "server",
+                    "x": 7,
+                    "y": -25
+                },
+                "locked": false,
+                "name": "server",
+                "node_id": "fa338126-e539-4467-8b17-e34d29f1f7ec",
+                "node_type": "docker",
+                "port_name_format": "Ethernet{0}",
+                "port_segment_size": 0,
+                "properties": {
+                    "adapters": 1,
+                    "aux": 5005,
+                    "console_http_path": "/",
+                    "console_http_port": 80,
+                    "console_resolution": "1024x768",
+                    "container_id": "3a01c34b5aee4375944287e5f7ffa0f0b6ec316812d1fcbbb3e11caec932dca0",
+                    "environment": null,
+                    "extra_hosts": null,
+                    "extra_volumes": [],
+                    "image": "uzumal/2-1-http:version1.0",
+                    "start_command": null,
+                    "usage": ""
+                },
+                "symbol": ":/symbols/docker_guest.svg",
+                "template_id": "009535d2-3a25-4a38-9e2a-2f07357f01e6",
+                "width": 65,
+                "x": 20,
+                "y": -101,
+                "z": 1
+            }
+        ]
+    },
+    "type": "topology",
+    "variables": null,
+    "version": "2.2.33.1",
+    "zoom": 100
+}
